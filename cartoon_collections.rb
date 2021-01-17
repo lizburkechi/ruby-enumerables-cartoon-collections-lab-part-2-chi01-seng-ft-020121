@@ -11,8 +11,8 @@ end
 # Return a new array of the results
 
 def summon_captain_planet(planeteer_calls)
-  planeteer_calls.map do |planeteer_calls|
-    planeteer_calls.capitalize + "!"
+  planeteer_calls.map do |calls|
+    calls.capitalize + "!"
 
     end
 end
@@ -31,6 +31,7 @@ end
 def find_valid_calls(planeteer_calls)
   valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
    planeteer_calls.find do |call|
+
      valid_calls.include? call
   end
 end
