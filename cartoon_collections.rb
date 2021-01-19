@@ -20,8 +20,8 @@ end
 # Return the boolean result of this check
 
 def long_planeteer_calls(planeteer_calls)
-  planeteer_calls.any? do |planeteer_calls|
-    planeteer_calls.length > 4
+  planeteer_calls.any? do |planeteer_call|
+    planeteer_call.length > 4
   end
 end
 
